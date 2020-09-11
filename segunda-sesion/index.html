@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEgunda sesion </title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+            <img id="ladrillo" src="./assets/ladrillo.jpg">
+            <audio id="fuego" src="./assets/fuego.mp3" preload="auto"></audio>
+            <video id="baile" src="./assets/cj.mp4" autoplay loop="true"></video>
+        </a-assets>
+
+        <a-entity sound="src:#fuego; autoplay: true" position=" 1 2 3"></a-entity>
+
+        <a-video src="#baile" width="4" height="2" position="0 0 -4" scale="2.929 1 1"></a-video>
+
+        <a-image scale="10 10 10" rotation="90 0 0 " color="yellow"
+            animation=
+            "property:scale;
+            to:2 2 2;
+            dur: 2000;
+            loop:true;
+            dir: alternate"
+            
+            animation__color=
+            "property:color;
+            to :#4CC3D9;
+            dur:2000;
+            loop:true;
+            dir:alternate;"></a-image>
+    </a-scene>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Sesión</title>
+
+    <!-- aquí la el script del framework a-frame -->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+
+</head>
+<body>
+    <!-- la escena siempre la comenzamos con la etiqueta a-escene -->
+   <a-scene>
+   
+     <a-box position="0 1 -3 " rotation="0 45 0" color="#aa0000"
+    animation="property:position;
+    to:0 3 -3;
+    dur:2000;
+    loop:true;
+    dir:alternate;" 
+   
+    animation__rotation="property:rotation;
+    to :0 360 0;
+    dur:2000;
+    loop:true;
+    dir:alternate;"
+
+    animation__color="property:color;
+    to :#4CC3D9;
+    dur:2000;
+    loop:true;
+    dir:alternate;"></a-box>
+
+
+  <a-sky color="#00ff00"></a-sky>
+
+    <a-text position="-0.286 3.903 -3.776" value="animaciones" ></a-text>
+
+
+
+  </a-scene>
+</body>
+</html>

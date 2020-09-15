@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+</head>
+<body>
+    <head>
+        <title>My A-Frame Scene</title>
+
+      </head>
+      
+      <body>
+        <a-scene>
+
+
+          <a-assets>
+            <img id="wall" src="wall.png">
+          </a-assets>
+        
+          <a-image src="#wall"scale="10 10 10 " material="alphaTest: 0.5"></a-image>
+          <a-entity geometry="primitive:plane;width:2;height:2;" material="shader:gif;src:url(./pinguino.gif); repeat: 2 2; transparent: true;alphaTest:0.5; side:double" ></a-entity>
+          <a-sky color="blue"></a-sky>
+
+          
+
+        </a-scene>
+      </body>
+</body>
+</html>

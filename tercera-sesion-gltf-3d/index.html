@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tercera sesion</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+
+            <a-asset-item id="casa" src="./assets/casa1.gltf"></a-asset-item>
+            <a-asset-item id="calavera" src="./assets/calavera.gltf"></a-asset-item>
+            <img id="wall" src="./assets/wall.png" >
+
+        </a-assets>
+
+        <a-entity environment="preset: default; groundColor: #445; grid: cross"></a-entity>
+
+        <a-imagen scale="10 10 10 " src="./assets/wall.png" position="1 2 3"></a-imagen>
+
+        <a-entity gltf-model="#casa" scale="11.912 11.91186 11.91186" position="0 -1.103 0"></a-entity>
+        
+        <a-entity gltf-model="#calavera" rotation="0 45 0" scale="11.912 11.91186 11.91186" position="0 -1.103 4"
+
+        animation="property:position;
+        to:0 4 4;
+        dur:2000;
+        loop:true;
+        dir:alternate;
+        easing: easeInCirc"
+        
+        animation__rotation="property:rotation;
+        to :0 360 0;
+        dur:2000;
+        loop:true;
+        dir:alternate;"
+        
+        animation__color="property:color;
+        to :#4CC3D9;
+        dur:2000;
+        loop:true;
+        dir:alternate;"></a-entity>
+
+    </a-scene>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=" https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- libreria de ambientes -->
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+          <a-asset-item id="chad" src="./assets/chad.gltf"></a-asset-item>
+          <a-asset-item id="perro" src="./assets/perro-ahora.gltf"></a-asset-item>
+        </a-assets>
+      
+
+        <a-entity gltf-model="#chad" scale="0.5 0.5 .5" position="0 0 -22.515"></a-entity>
+        <a-entity gltf-model="#perro" scale="0.5 0.5 .5" position></a-entity>
+
+        <!-- PAREDES -->
+<a-box color="white"  position="-6.517 2.27754 -2.412" scale="9.052 4.639 0.935" ></a-box>
+<a-box color="white"  position="6.509 2.27754 -2.412" scale="9.052 4.639 0.935" ></a-box>
+|<a-box color="white" position="10.69504 2.27754 -13.5204" scale="22.36039 4.639 0.935" rotation="0 90 0"></a-box>
+|<a-box color="white" position="-10.721 2.27754 -13.5204" scale="22.36039 4.639 0.935" rotation="0 90 0"></a-box>
+
+<a-box color="white" position="0.04352 2.27754 -24.22079" scale="22.36039 4.639 0.935" ></a-box>
+
+        <!-- AMBIENTE -->
+        <a-entity environment="preset: default; groundColor: #445; grid: cross"></a-entity>
+
+      </a-scene>
+</body>
+</html>

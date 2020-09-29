@@ -21,7 +21,7 @@
 <body>
 
   <!-- colocar  -- "debug: true" en physics para visualizar el tamaño de la solidez del objeto -->
-  <a-scene physics="gravity:0.1; debug: true">
+  <a-scene physics="gravity:0; debug: true">
 
     <a-entity movement-controls kinematic-body>
       <a-entity id="camera" camera position="0 3 0" look-controls></a-entity>
@@ -39,7 +39,7 @@
     <a-entity static-body gltf-model="#ogro" scale="3.90922 3.90922 3.90922" position="0 0 -10.9337"></a-entity>
     <a-entity static-body gltf-model="#cara" scale="3.90922 3.90922 3.90922" position="-7.77399 0 -12.75434"></a-entity>
     <a-entity static-body gltf-model="#chad" position="0 0 -22.515"></a-entity>
-    <a-entity dynamic-body gltf-model="#perro" scale="0.5 0.5 .5" position></a-entity>
+    <a-entity static-body gltf-model="#perro" scale="0.5 0.5 .5" position></a-entity>
 
     <!-- PAREDES -->
     <a-box static-body color="white" position="-6.517 2.27754 -2.412" scale="9.052 4.639 0.935"></a-box>
